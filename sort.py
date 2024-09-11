@@ -57,7 +57,7 @@
 def selectionSort(array):
     for i in range(0, len(array) - 1): # batasnya sampai len(array) - 1 karena pada array terakhir tidak perlu disorting lagi
         cur_min_idx = i
-        for j in range(i , len(array)):
+        for j in range(i + 1, len(array)):
             if array[j] < array[cur_min_idx]:
                 cur_min_idx = j
 
